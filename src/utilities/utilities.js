@@ -1,7 +1,7 @@
 import Swal from 'sweetalert2';
 
+/* ====LocalStorage Data Adding Function======= */
 const addToCart = (id, title) => {
-   /*  console.log(id, title); */
     const bookMarkedData = [];
     const dataFromLocalStorage = JSON.parse(localStorage.getItem('bookMarkedItems'));
     if(dataFromLocalStorage){

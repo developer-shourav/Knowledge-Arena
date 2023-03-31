@@ -12,6 +12,7 @@ function App() {
 
    const [allBlogs, setAllBlogs] = useState([]);
    const [readingTime, setReadingTime] = useState(0);
+   const [cartData, setCardData] = useState([]);
    
    
    /* Total Reading Time Calculator Function */
@@ -20,17 +21,25 @@ function App() {
       setReadingTime(newTimeTotal)
    }
 
+   /* Bookmark Data in local Storage */
    const addToBookMark = (value) => {
     const bookmarkBlog = allBlogs.find( blog => blog.id === value);
     addToCart(value, bookmarkBlog?.title)
+    
   };
 
-  
   useEffect( ( ) => {
     fetch('data.json')
     .then ( res => res.json())
     .then ( data => setAllBlogs(data))
   }, [ ])
+  
+  /* Get Data form localStorage  */
+  useEffect( ( ) => {
+    const storedData = JSON.parse(localStorage.getItem('bookMarkedItems'));
+    
+    setCardData(storedData)
+  }, [addToBookMark])
 
 
   return (
@@ -52,7 +61,7 @@ function App() {
 
       {/* -----Cart sections----- */}
         <div>
-          <Cart time ={readingTime}> </Cart>
+          <Cart cartData={cartData} time ={readingTime}> </Cart>
         </div>
 
       </div>
@@ -70,3 +79,4 @@ function App() {
 }
 
 export default App;
+
