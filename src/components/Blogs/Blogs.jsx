@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState} from "react";
 import SingleBlog from "../SingleBlog/SingleBlog";
-const Blogs = ({addReadingTime}) => {
+const Blogs = ({addReadingTime, addToBookMark }) => {
    
   const [allBlogs, setAllBlogs] = useState([]);
   
@@ -14,7 +14,7 @@ const Blogs = ({addReadingTime}) => {
   return (
     <>
      {
-      allBlogs.map( blog => <SingleBlog blogData = {blog} key = {blog?.id} addReadingTime={addReadingTime}> </SingleBlog> )
+      allBlogs.map( blog => <SingleBlog blogData = {blog} key = {blog?.id} addToBookMark ={addToBookMark}  addReadingTime={addReadingTime} > </SingleBlog> )
      }
     </>
   );
