@@ -5,6 +5,7 @@ import { useEffect, useState} from "react";
 import Cart from "./components/Cart/Cart";
 import Blogs from "./components/Blogs/Blogs";
 import Questions from "./components/Questions/Questions";
+import { addToCart } from "./utilities/utilities";
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
 
    const addToBookMark = (value) => {
     const bookmarkBlog = allBlogs.find( blog => blog.id === value);
-    console.log(bookmarkBlog?.title);
+    addToCart(value, bookmarkBlog?.title)
   };
 
   
