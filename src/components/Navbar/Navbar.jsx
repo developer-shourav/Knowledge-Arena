@@ -5,7 +5,8 @@ import userImage from "../../assets/images/userProfile.png";
 const Navbar = () => {
   return (
     <>
-      <div className="navbar bg-base-100">
+    {/* ---------Responsive Navigation Bar */}
+      <nav className="navbar bg-base-100 ">
         <div className="flex-1 items-center justify-between">
           <a className="btn btn-ghost normal-case text-2xl">Knowledge Cafe</a>
 
@@ -49,7 +50,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </div>
+      </nav>
     </>
   );
 };
