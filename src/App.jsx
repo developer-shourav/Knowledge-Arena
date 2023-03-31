@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Cart from "./components/Cart/Cart";
 import Blogs from "./components/Blogs/Blogs";
+import Questions from "./components/Questions/Questions";
 
 function App() {
 
@@ -26,6 +27,9 @@ function App() {
         </div>
 
       </div>
+
+     <Questions> </Questions>
+      
     </main>
 
     </div>

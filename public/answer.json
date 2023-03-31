@@ -1,0 +1,21 @@
+[
+  {
+    "question": "What is the difference between 'props' and 'state' ?",
+    "ans": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores rem sunt quisquam saepe sequi veritatis voluptatum molestiae optio facere animi tenetur illum fugiat, modi ex voluptate labore doloremque perferendis suscipit necessitatibus quam ad, similique corporis! Quibusdam cum earum amet, ratione ullam similique soluta cupiditate beatae voluptatibus nihil ea? Magni, ipsa!"
+  },
+
+  {
+    "question": "How 'useState' works?",
+    "ans": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores rem sunt quisquam saepe sequi veritatis voluptatum molestiae optio facere animi tenetur illum fugiat, modi ex voluptate labore doloremque perferendis suscipit necessitatibus quam ad, similique corporis! Quibusdam cum earum amet, ratione ullam similique soluta cupiditate beatae voluptatibus nihil ea? Magni, ipsa!"
+  },
+
+  {
+    "question": "what is done by 'useEffect' besides data fetching?",
+    "ans": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores rem sunt quisquam saepe sequi veritatis voluptatum molestiae optio facere animi tenetur illum fugiat, modi ex voluptate labore doloremque perferendis suscipit necessitatibus quam ad, similique corporis! Quibusdam cum earum amet, ratione ullam similique soluta cupiditate beatae voluptatibus nihil ea? Magni, ipsa!"
+  },
+
+  {
+    "question": "How does React work?",
+    "ans": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores rem sunt quisquam saepe sequi veritatis voluptatum molestiae optio facere animi tenetur illum fugiat, modi ex voluptate labore doloremque perferendis suscipit necessitatibus quam ad, similique corporis! Quibusdam cum earum amet, ratione ullam similique soluta cupiditate beatae voluptatibus nihil ea? Magni, ipsa!"
+  }
+]
