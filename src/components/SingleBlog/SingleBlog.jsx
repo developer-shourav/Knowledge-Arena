@@ -4,6 +4,7 @@ import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 const SingleBlog = (props) => {
   const { id, blogCover, authorImage, writtingDate, authorName, readingTime, title, tag1, tag2 } = props.blogData;
 
+  const {addReadingTime} = props;
   const addToBookMark = (value) => {
     console.log(value);
   };
@@ -61,7 +62,7 @@ const SingleBlog = (props) => {
             {tag1} <span className="ms-4">{tag2}</span>
           </p>
 
-          <button className="btn border-0 ps-0 hover:bg-transparent bg-transparent text-violet-700 underline">Mark as read</button>
+          <button onClick={() => addReadingTime(readingTime)} className="btn border-0 ps-0 hover:bg-transparent bg-transparent text-violet-700 underline">Mark as read</button>
         </div>
       </div>
       </div>

@@ -4,8 +4,16 @@ import Navbar from "./components/Navbar/Navbar";
 import Cart from "./components/Cart/Cart";
 import Blogs from "./components/Blogs/Blogs";
 import Questions from "./components/Questions/Questions";
+import { useState } from "react";
 
 function App() {
+
+   const [readingTime, setReadingTime] = useState(0);
+   
+   const addReadingTime = (time) => {
+      const newTimeTotal = readingTime + time ;
+      setReadingTime(newTimeTotal)
+   }
 
   return (
     <div >
@@ -21,12 +29,12 @@ function App() {
       {/* -----Blogs sections----- */}
       <div id="blog" className="grid grid-cols-1 my-8  md:grid-cols-3 gap-5">
         <div className=" md:col-span-2">
-          <Blogs> </Blogs>
+          <Blogs addReadingTime = {addReadingTime}> </Blogs>
         </div>
 
       {/* -----Cart sections----- */}
         <div>
-          <Cart> </Cart>
+          <Cart time ={readingTime}> </Cart>
         </div>
 
       </div>

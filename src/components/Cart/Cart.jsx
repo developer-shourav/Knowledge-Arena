@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Cart = () => {
+const Cart = ({time}) => {
     return (
-        <div>
-           <div className='bg-purple-100 border border-purple-600 py-5 rounded-lg text-lg font-bold text-purple-800 text-center'><p>Spent time on read : 177 min</p></div> 
+        <div className='sticky top-20'>
+           <div className='bg-purple-100 border border-purple-600 py-5 rounded-lg text-lg font-bold text-purple-800 text-center'><p>Spent time on read : {time} min</p></div> 
            <div className='bg-slate-200 my-4 p-4 rounded-lg'>
             <h3 className='text-xl font-bold'>Bookmarked Blogs : 8</h3>
             <div>

@@ -1,9 +1,10 @@
 import React from "react";
 import { useEffect, useState} from "react";
 import SingleBlog from "../SingleBlog/SingleBlog";
-const Blogs = () => {
+const Blogs = ({addReadingTime}) => {
    
   const [allBlogs, setAllBlogs] = useState([]);
+  
   useEffect( ( ) => {
     fetch('data.json')
     .then ( res => res.json())
@@ -13,7 +14,7 @@ const Blogs = () => {
   return (
     <>
      {
-      allBlogs.map( blog => <SingleBlog blogData = {blog} key = {blog?.id}> </SingleBlog> )
+      allBlogs.map( blog => <SingleBlog blogData = {blog} key = {blog?.id} addReadingTime={addReadingTime}> </SingleBlog> )
      }
     </>
   );
