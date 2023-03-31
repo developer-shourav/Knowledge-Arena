@@ -11,7 +11,7 @@ const SingleBlog = (props) => {
   return (
     <>
       <div>
-        <hr />
+        
         <div className=" card-compact rounded-none w-100 pt-8  bg-base-100">
         {/*------- Blog Cover------- */}
         <figure>
@@ -66,6 +66,7 @@ const SingleBlog = (props) => {
           <button onClick={() => addReadingTime(readingTime)} className="btn border-0 ps-0 hover:bg-transparent bg-transparent text-violet-700 underline">Mark as read</button>
         </div>
       </div>
+      <hr />
       </div>
     </>
   );

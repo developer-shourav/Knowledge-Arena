@@ -1,25 +1,35 @@
 
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
+import { useEffect, useState} from "react";
 import Cart from "./components/Cart/Cart";
 import Blogs from "./components/Blogs/Blogs";
 import Questions from "./components/Questions/Questions";
-import { useState } from "react";
+
 
 function App() {
 
+   const [allBlogs, setAllBlogs] = useState([]);
    const [readingTime, setReadingTime] = useState(0);
    
    
-   
+   /* Total Reading Time Calculator Function */
    const addReadingTime = (time) => {
       const newTimeTotal = readingTime + time ;
       setReadingTime(newTimeTotal)
    }
 
    const addToBookMark = (value) => {
-    console.log(value);
+    const bookmarkBlog = allBlogs.find( blog => blog.id === value);
+    console.log(bookmarkBlog?.title);
   };
+
+  
+  useEffect( ( ) => {
+    fetch('data.json')
+    .then ( res => res.json())
+    .then ( data => setAllBlogs(data))
+  }, [ ])
 
 
   return (
@@ -36,7 +46,7 @@ function App() {
       {/* -----Blogs sections----- */}
       <div id="blog" className="grid grid-cols-1 my-8  md:grid-cols-3 gap-5">
         <div className=" md:col-span-2">
-          <Blogs addToBookMark ={addToBookMark} addReadingTime = {addReadingTime}> </Blogs>
+          <Blogs allBlogs = {allBlogs} addToBookMark ={addToBookMark} addReadingTime = {addReadingTime}> </Blogs>
         </div>
 
       {/* -----Cart sections----- */}
