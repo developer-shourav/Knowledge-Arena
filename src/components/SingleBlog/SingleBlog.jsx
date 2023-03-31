@@ -9,7 +9,9 @@ const SingleBlog = (props) => {
   };
   return (
     <>
-      <div className=" card-compact rounded-none w-100  bg-base-100">
+      <div>
+        <hr />
+        <div className=" card-compact rounded-none w-100 pt-8  bg-base-100">
         {/*------- Blog Cover------- */}
         <figure>
           <img
@@ -50,15 +52,18 @@ const SingleBlog = (props) => {
           </div>
 
         {/*------- Blog Title------- */}
-          <h2 className="card-title mt-6 pb-4   text-4xl">
+          <h2 className="card-title mt-6 pb-4 text-2xl md:text-3xl  lg:text-4xl">
            {title}
           </h2>
 
         {/*------- Blog Related Tags------- */}
-          <p className="text-gray-500">
+          <p className="text-gray-500 my-4">
             {tag1} <span className="ms-4">{tag2}</span>
           </p>
+
+          <button className="btn border-0 ps-0 hover:bg-transparent bg-transparent text-violet-700 underline">Mark as read</button>
         </div>
+      </div>
       </div>
     </>
   );
