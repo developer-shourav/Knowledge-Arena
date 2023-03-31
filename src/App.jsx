@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="">
      {/*---- header ---- */}
-     <header>
+     <header className="sticky top-0">
        {/* --Navbar-- */}
      <Navbar> </Navbar>
      </header>
