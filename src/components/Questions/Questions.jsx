@@ -13,7 +13,8 @@ const Questions = () => {
     },[ ])
 
     return (
-        <div>
+        <div className='grid grid-cols-1 gap-4'>
+            
             {
                 questions.map( questionItem => <SingleQuestion questionData = {questionItem} key ={questionItem?.question}> </SingleQuestion>)
             }

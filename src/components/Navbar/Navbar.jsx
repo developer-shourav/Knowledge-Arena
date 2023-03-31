@@ -1,12 +1,11 @@
 import React from "react";
-import "./Navbar.css";
 import userImage from "../../assets/images/userProfile.png";
 
 const Navbar = () => {
   return (
     <>
     {/* ---------Responsive Navigation Bar */}
-      <nav className="navbar bg-base-100  shadow-md  bg-opacity-90 rounded">
+      <nav className="navbar bg-base-100  shadow-md  bg-opacity-95 rounded">
         <div className="flex-1 items-center justify-between">
           <a className=" font-bold normal-case text-lg md:text-2xl">Knowledge Cafe</a>
 

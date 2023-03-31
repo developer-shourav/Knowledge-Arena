@@ -8,27 +8,34 @@ import Questions from "./components/Questions/Questions";
 function App() {
 
   return (
-    <div className="">
+    <div >
      {/*---- header ---- */}
-     <header className="sticky top-0">
+     <header className="sticky top-0 z-50">
        {/* --Navbar-- */}
      <Navbar> </Navbar>
      </header>
 
     {/*---- Main ---- */}
     <main>
-      <div className="grid grid-cols-1 my-8  md:grid-cols-3 gap-5">
+
+      {/* -----Blogs sections----- */}
+      <div id="blog" className="grid grid-cols-1 my-8  md:grid-cols-3 gap-5">
         <div className=" md:col-span-2">
           <Blogs> </Blogs>
         </div>
 
+      {/* -----Cart sections----- */}
         <div>
           <Cart> </Cart>
         </div>
 
       </div>
 
+    {/* -----Questions and Answers----- */}
+     <div className="my-10 py-10">
+     <h2 id="questions" className="font-bold text-3xl mb-10">Common Questions</h2>
      <Questions> </Questions>
+     </div>
       
     </main>
 
