@@ -8,7 +8,7 @@ const Navbar = () => {
     {/* ---------Responsive Navigation Bar */}
       <nav className="navbar bg-base-100 ">
         <div className="flex-1 items-center justify-between">
-          <a className="btn btn-ghost normal-case text-2xl">Knowledge Cafe</a>
+          <a className=" font-bold normal-case text-lg md:text-2xl">Knowledge Cafe</a>
 
           <div className="flex items-center justify-around">
             <div className="hidden md:block ">
@@ -25,7 +25,7 @@ const Navbar = () => {
             <div>
               <div className="dropdown dropdown-end">
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                  <div className="w-12 rounded-full">
+                  <div className="w-10 md:w-12 rounded-full">
                     <img src={userImage} />
                   </div>
                 </label>
