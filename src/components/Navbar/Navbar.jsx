@@ -7,7 +7,7 @@ const Navbar = () => {
     {/* ---------Responsive Navigation Bar */}
       <nav className="navbar bg-base-100  shadow-md  bg-opacity-95 rounded">
         <div className="flex-1 items-center justify-between">
-          <a className=" font-bold normal-case text-lg md:text-2xl">Knowledge Cafe</a>
+          <a className=" font-bold normal-case text-lg md:text-2xl">Knowledge Arena</a>
 
           <div className="flex items-center justify-around">
             <div className="hidden md:block ">

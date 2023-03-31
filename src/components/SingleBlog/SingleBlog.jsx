@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 const SingleBlog = (props) => {
   const { id, blogCover, authorImage, writtingDate, authorName, readingTime, title, tag1, tag2 } = props.blogData;
 
   const {addReadingTime} = props;
+
+  const [bookMarkBtn, setBookMarkBtn] = useState(false);
   const addToBookMark = (value) => {
     console.log(value);
+    setBookMarkBtn(true)
   };
+
+
   return (
     <>
       <div>
@@ -40,15 +45,13 @@ const SingleBlog = (props) => {
            {/*------- Reading Time and Bookmarked------- */}
             <div>
               <span className=" text-gray-600 text-lg">{readingTime} min read</span>
-              <span onClick={() => addToBookMark(id)} className="text-2xl mx-2">
-                <FontAwesomeIcon icon={faBookmark} style={{ color: "gray" }} />
+
+              <span onClick={() => addToBookMark(id)}  className="btn text-2xl mx-2 border-0 p-0 hover:bg-transparent bg-transparent">
+                {bookMarkBtn ? <FontAwesomeIcon icon={faBookmark} title="BookMarked Blog" style={{ color: "royalblue" }} /> : <FontAwesomeIcon icon={faBookmark} title="Add BookMark" style={{ color: "gray" }} />}
               </span>
-              <span onClick={() => addToBookMark(id)} className="text-2xl">
-                <FontAwesomeIcon
-                  icon={faBookmark}
-                  style={{ color: "royalblue" }}
-                />
-              </span>
+
+
+
             </div>
           </div>
 
