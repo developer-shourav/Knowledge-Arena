@@ -10,7 +10,7 @@ const Cart = (props) => {
             <h3 className='text-xl font-bold '>Bookmarked Blogs : {cartData?.length}</h3>
             <div>
                 {
-                    cartData.map( data => <BookMarkedItem key={Math.random(data?.id*10)}  itemData = {data}> </BookMarkedItem>)
+                    cartData?.map( data => <BookMarkedItem key={Math.random(data?.id*10)}  itemData = {data}> </BookMarkedItem>)
                 }
                 
             </div>

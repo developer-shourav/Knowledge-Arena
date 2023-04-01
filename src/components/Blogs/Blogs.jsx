@@ -6,7 +6,7 @@ const Blogs = ({allBlogs, addReadingTime, addToBookMark }) => {
   return (
     <>
      {
-      allBlogs.map( blog => <SingleBlog blogData = {blog} key = {blog?.id} addToBookMark ={addToBookMark}  addReadingTime={addReadingTime} > </SingleBlog> )
+      allBlogs?.map( blog => <SingleBlog blogData = {blog} key = {blog?.id} addToBookMark ={addToBookMark}  addReadingTime={addReadingTime} > </SingleBlog> )
      }
     </>
   );
