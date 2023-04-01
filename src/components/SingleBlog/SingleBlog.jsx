@@ -7,7 +7,8 @@ const SingleBlog = (props) => {
   const {addReadingTime} = props;
   const {addToBookMark} = props;
   const [bookMarkBtn, setBookMarkBtn] = useState(false);
-
+  const storedData = JSON.parse(localStorage.getItem('bookMarkedItems'));
+  const isExist = storedData?.find( item => item?.id === id);
   return (
     <>
       <div>
@@ -45,7 +46,7 @@ const SingleBlog = (props) => {
                 addToBookMark(id)
                 setBookMarkBtn(true)
               }}  className="btn text-2xl mx-2 border-0 p-0 hover:bg-transparent bg-transparent">
-                {bookMarkBtn ? <FontAwesomeIcon icon={faBookmark} title="BookMarked Blog" style={{ color: "royalblue" }} /> : <FontAwesomeIcon icon={faBookmark} title="Add BookMark" style={{ color: "gray" }} />}
+                {(bookMarkBtn || isExist) ? <FontAwesomeIcon icon={faBookmark} title="BookMarked Blog" style={{ color: "royalblue" }} /> : <FontAwesomeIcon icon={faBookmark} title="Add BookMark" style={{ color: "gray" }} />}
               </span>
 
 
