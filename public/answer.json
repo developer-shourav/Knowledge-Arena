@@ -1,7 +1,7 @@
 [
   {
     "question": "What is the difference between 'props' and 'state' ?",
-    "ans": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores rem sunt quisquam saepe sequi veritatis voluptatum molestiae optio facere animi tenetur illum fugiat, modi ex voluptate labore doloremque perferendis suscipit necessitatibus quam ad, similique corporis! Quibusdam cum earum amet, ratione ullam similique soluta cupiditate beatae voluptatibus nihil ea? Magni, ipsa!"
+    "ans": "Props and State is totally different, props is like an argument of a function. When we create a component and want to render data, In this case, we use props for passing data from the source. Props comes from outside of a component. On the other hand, the State occurs inside a component. State means it can be changed.  State changed by any kind of outer events or the events that occurs by the user or client side. State has an initial value and it changes due to evens."
   },
 
   {
