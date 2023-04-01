@@ -17,9 +17,6 @@ const Navbar = () => {
               <a className="me-6" href="#questions">
                 Questions
               </a>
-              <a className="me-6" target="_blank" href="https://developer-shourav.web.app">
-                About
-              </a>
             </div>
             <div>
               <div className="dropdown dropdown-end">
@@ -40,9 +37,6 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a href="#questions">Questions</a>
-                  </li>
-                  <li>
-                    <a target="_blank" href="https://developer-shourav.web.app">About</a>
                   </li>
                 </ul>
               </div>
