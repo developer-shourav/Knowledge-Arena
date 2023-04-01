@@ -6,16 +6,16 @@
 
   {
     "question": "How 'useState' works?",
-    "ans": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores rem sunt quisquam saepe sequi veritatis voluptatum molestiae optio facere animi tenetur illum fugiat, modi ex voluptate labore doloremque perferendis suscipit necessitatibus quam ad, similique corporis! Quibusdam cum earum amet, ratione ullam similique soluta cupiditate beatae voluptatibus nihil ea? Magni, ipsa!"
+    "ans": "useState is a very popular and useful react hook. useState returns an Array. The first element of the array is the initial value of useState hook's and the second array element is a function that changes the value of the first element of array  by event. The event could be form user or clint side ."
   },
 
   {
     "question": "what is done by 'useEffect' besides data fetching?",
-    "ans": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores rem sunt quisquam saepe sequi veritatis voluptatum molestiae optio facere animi tenetur illum fugiat, modi ex voluptate labore doloremque perferendis suscipit necessitatibus quam ad, similique corporis! Quibusdam cum earum amet, ratione ullam similique soluta cupiditate beatae voluptatibus nihil ea? Magni, ipsa!"
+    "ans": "useEffect is a very useful react hook too. useEffect handle the after effects. It is commonly use for data fetching outside. But it also rendering data and call any function based on its dependency. UseEffect hook contains with an anonymous function and a dependency. If there is no dependency it's initial dependency is an empty array."
   },
 
   {
     "question": "How does React work?",
-    "ans": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores rem sunt quisquam saepe sequi veritatis voluptatum molestiae optio facere animi tenetur illum fugiat, modi ex voluptate labore doloremque perferendis suscipit necessitatibus quam ad, similique corporis! Quibusdam cum earum amet, ratione ullam similique soluta cupiditate beatae voluptatibus nihil ea? Magni, ipsa!"
+    "ans": "React is most popular javascript libray for creating user interface or client side app. React App gives a preset for production level web site or web application. It provides developer friendly environment for frontend developer. React is a component based libray fo Javascript. React jsx makes it more easier to learn and work with. It comes with so many awesome Hooks to make developers live easyer. React use 'diff alghorithom' to detect the simple change of the page. It's crate a 'vartual dom' , that makes it so fast to rendering data."
   }
 ]
