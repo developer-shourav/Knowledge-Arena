@@ -45,7 +45,7 @@ function App() {
   useEffect( () => {
     const storedData = JSON.parse(localStorage.getItem('bookMarkedItems'));
     setCardData(storedData)
-  }, [allBlogs])
+  })
 
   return (
     <div >
