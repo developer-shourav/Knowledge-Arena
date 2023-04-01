@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import { useEffect, useState} from "react";
 import Cart from "./components/Cart/Cart";
 import Blogs from "./components/Blogs/Blogs";
-import Questions from "./components/Questions/Questions";
+import Blog from "./components/Blog/Blog";
 import { addToCart } from "./utilities/utilities";
 import Footer from "./components/Footer/Footer";
 import questionImg from "./assets/images/question.png";
@@ -71,12 +71,12 @@ function App() {
 
       </div>
 
-    {/* -----Questions and Answers----- */}
+    {/* -----Questions Blog and Answers----- */}
      <div id="questions" className="my-10 py-10">
      <h2  className="font-bold text-3xl mb-10">Common Questions</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 ">
         <div className="">
-        <Questions> </Questions>
+        <Blog> </Blog>
         </div>
 
         <div className="hidden md:block">

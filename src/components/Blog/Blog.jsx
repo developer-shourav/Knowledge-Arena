@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SingleQuestion from '../SingleQuestion/SingleQuestion';
 
-const Questions = () => {
+const Blog = () => {
 
     const [questions, setQuestions] = useState([]);
 
@@ -22,4 +22,4 @@ const Questions = () => {
     );
 };
 
-export default Questions;
+export default Blog;
