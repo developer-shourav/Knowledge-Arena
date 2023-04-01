@@ -6,6 +6,7 @@ import Cart from "./components/Cart/Cart";
 import Blogs from "./components/Blogs/Blogs";
 import Questions from "./components/Questions/Questions";
 import { addToCart } from "./utilities/utilities";
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
@@ -77,7 +78,9 @@ function App() {
      </div>
       
     </main>
-
+     
+     {/* -----Footer----- */}
+     <Footer> </Footer>
     </div>
   );
 }
