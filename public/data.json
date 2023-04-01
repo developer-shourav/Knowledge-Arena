@@ -34,7 +34,7 @@
     },
     {
       "id": 989459129,
-      "blogCover": "https://shorturl.at/ehBDL",
+      "blogCover": "https://www.forbesindia.com/media/images/2020/Apr/img_131719_reza900600.jpg",
       "title": "How to be a successful programmer plus businessman in 2023",
       "authorName": "Shourav Raj",
       "writtingDate": "Feb 10, 2023",
@@ -42,5 +42,101 @@
       "readingTime": 20,
       "tag1": "#SuccessfulBusiness",
       "tag2": "#programmingAndBusiness"
+    },
+
+    {
+      "id": 989488129,
+      "blogCover": "https://www.digitalhungary.hu/uploads/articles/195/19475/lead_original.jpg",
+      "title": "What is OpenAI's ChatGPT and Can You Invest?",
+      "authorName": "Shourav Raj",
+      "writtingDate": "Feb 02, 2023",
+      "authorImage": "https://i.ibb.co/3phHCd7/linkedin.jpg",
+      "readingTime": 10,
+      "tag1": "#ChatGPT",
+      "tag2": "#AI"
     }
+    ,
+    {
+      "id": 989400029,
+      "blogCover": "https://media.millichronicle.com/2023/02/08151737/chat-gpt-and-bard-800x445.jpg",
+      "title": "Bard vs ChatGPT: What do we know about Google's AI chatbot?",
+      "authorName": "Milli Chornicle",
+      "writtingDate": "March 02, 2023",
+      "authorImage": "https://i.ibb.co/xGMGDHy/clint6.jpg",
+      "readingTime": 7,
+      "tag1": "#Bard_Vs_ChatGPT",
+      "tag2": "#AI_War"
+    },
+  
+    {
+      "id": 999409029,
+      "blogCover": "https://www.freecodecamp.org/news/content/images/2019/10/cover-image-3.png",
+      "title": "What's the Difference Between a Framework and Library?",
+      "authorName": "Monika Shaha",
+      "writtingDate": "Feb 14, 2023",
+      "authorImage": "https://i.ibb.co/72V9KBF/clint2.jpg",
+      "readingTime": 9,
+      "tag1": "#Library_VS_Framework",
+      "tag2": "#Webdevelopment"
+    },
+    {
+      "id": 599409029,
+      "blogCover": "https://www.joomshaper.com/images/2023/02/07/How-to-Optimize-Your-Joomla-Website-2.jpg",
+      "title": "How to Optimize Your Joomla Website for SEO with SP Page Builder",
+      "authorName": "JoomShaper",
+      "writtingDate": "Feb 7, 2023",
+      "authorImage": "https://i.ibb.co/pwyjxW5/clint3.jpg",
+      "readingTime": 11,
+      "tag1": "#image_optimization",
+      "tag2": "#Webdevelopment"
+    },
+
+    {
+      "id": 591409027,
+      "blogCover": "https://s3.india.com/wp-content/uploads/2021/05/What-is-cryptocurrency.jpg",
+      "title": "What is Cryptocurrency? A Complete Beginners Guide",
+      "authorName": "Dev Luise",
+      "writtingDate": "Jan 20, 2023",
+      "authorImage": "https://i.ibb.co/QmTzDSD/clint4.jpg",
+      "readingTime": 20,
+      "tag1": "#Crypto",
+      "tag2": "#Digital_Currency"
+    }, 
+
+    {
+      "id": 591499027,
+      "blogCover": "https://online.stanford.edu/sites/default/files/inline-images/1600X900-How-does-blockchain-work.jpg",
+      "title": "How does blockchain work?",
+      "authorName": "Jeyasmin Akhter",
+      "writtingDate": "Jan 25, 2023",
+      "authorImage": "https://i.ibb.co/1YVMqPw/clint7.jpg",
+      "readingTime": 15,
+      "tag1": "#Crypto",
+      "tag2": "#Digital_Currency"
+    },
+
+    {
+      "id": 591433027,
+      "blogCover": "https://images.ctfassets.net/aq13lwl6616q/1pU68mCdL4C26KTxAUXmbe/f6a21624f217c0afec2829b33b2899b0/Thumbnail_-_Freelance_Course.jpeg",
+      "title": "The Complete Guide to Freelancing in 2023 | Zero To Mastery",
+      "authorName": "Ankan Halder",
+      "writtingDate": "Dec 31, 2022",
+      "authorImage": "https://i.ibb.co/58gnrDM/clint1.png",
+      "readingTime": 20,
+      "tag1": "#Freelancing",
+      "tag2": "#Online_Earning"
+    },
+
+    {
+      "id": 599433527,
+      "blogCover": "https://shorturl.at/bcvAQ",
+      "title": "Follow-Up Email Messages and Letters for Interviews",
+      "authorName": "Rahul Jadav",
+      "writtingDate": "Dec 11, 2022",
+      "authorImage": "https://i.ibb.co/yf3kV1H/clint5.jpg",
+      "readingTime": 8,
+      "tag1": "#Email",
+      "tag2": "#Job_letter"
+    }
+
   ]
