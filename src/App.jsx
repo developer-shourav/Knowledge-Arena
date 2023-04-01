@@ -21,12 +21,17 @@ function App() {
       setReadingTime(newTimeTotal)
    }
 
-   /* Bookmark Data in local Storage */
-   const addToBookMark = (value) => {
-    const bookmarkBlog = allBlogs.find( blog => blog.id === value);
-    addToCart(value, bookmarkBlog?.title)
+     /* Bookmark Data in local Storage */
+
+      const addToBookMark = (id) => {
+      const bookmarkBlog = allBlogs.find( blog => blog?.id === id);
+      const title = bookmarkBlog?.title;
+      addToCart(id, bookmarkBlog?.title)
+      const storedData = JSON.parse(localStorage.getItem('bookMarkedItems'));
+      const cartDataAfterBookmarked = [{id, title}]
+      setCardData(storedData, ...cartDataAfterBookmarked)
+    };
     
-  };
 
   useEffect( ( ) => {
     fetch('data.json')
@@ -35,12 +40,11 @@ function App() {
   }, [ ])
   
   /* Get Data form localStorage  */
-  useEffect( ( ) => {
-    const storedData = JSON.parse(localStorage.getItem('bookMarkedItems'));
-    
-    setCardData(storedData)
-  }, [addToBookMark])
 
+  useEffect( () => {
+    const storedData = JSON.parse(localStorage.getItem('bookMarkedItems'));
+    setCardData(storedData)
+  }, [allBlogs])
 
   return (
     <div >
